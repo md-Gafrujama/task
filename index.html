@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="styles.css" />
+ </head>
+ <body>
+    <header>
+      <h1>Recipe App @Md Gafru</h1>
+    </header>
+    <main>
+      <section id="search-section">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search by recipe name or ingredient"
+        />
+        <button id="search-btn">Search</button>
+      </section>
+      <section id="add-recipe-section">
+        <h2>Add Recipe</h2>
+        <form id="add-recipe-form">
+          <input type="text" id="recipe-name" placeholder="Recipe Name" required />
+          <textarea id="recipe-ingredients" placeholder="Ingredients" required></textarea>
+          <textarea id="recipe-instructions" placeholder="Instructions" required></textarea>
+          <button type="submit">Add Recipe</button>
+        </form>
+      </section>
+      <section id="recipe-details"></section>
+      <section id="favorites-section">
+        <h2>Favorite Recipes</h2>
+        <div id="favorites-list"></div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+ </body>
+</html>
